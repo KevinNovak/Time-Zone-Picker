@@ -28,14 +28,14 @@ $('#map').timezonePicker({
 });
 
 // Set up map listener
-$('#map').on('map:value:changed', () => {
-    let selectedValue = $('#map').data('timezonePicker').getValue()[0]?.timezone;
-    if (selectedValue) {
-        selectedTimeZone.value = selectedValue;
+$('#map').on('map:value:changed', function () {
+    let selected = $('#map').data('timezonePicker').getValue()[0];
+    if (selected && selected.timezone) {
+        selectedTimeZone.value = selected.timezone;
     }
 });
 
-selectedTimeZoneCopyBtn.onclick = () => {
+selectedTimeZoneCopyBtn.onclick = function () {
     selectedTimeZone.select();
     document.execCommand('copy');
 };
