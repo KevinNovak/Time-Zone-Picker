@@ -1,0 +1,17 @@
+/* TODO: Uncomment */
+/* .filter-box {
+    display: none;
+} */
+
+.timezone-map polygon[data-selected='true'] {
+    fill: #496a84;
+}
+
+.timezone-map polygon {
+    fill: #bbb;
+}
+
+.timezone-map polygon:hover {
+    fill: #5a5a5a;
+    cursor: pointer;
+}
