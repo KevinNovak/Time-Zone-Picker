@@ -1,8 +1,8 @@
 // Selectors
-let selectedTimeZone = document.getElementById('selected-time-zone');
 let autoDetectedTimeZone = document.getElementById('auto-detected-time-zone');
-let hoveredTimeZone = document.getElementById('hovered-time-zone');
+let selectedTimeZone = document.getElementById('selected-time-zone');
 let selectedTimeZoneCopyBtn = document.getElementById('selected-time-zone-copy-btn');
+let hoveredTimeZone = document.getElementById('hovered-time-zone');
 
 // Auto-detect time zone
 let zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
