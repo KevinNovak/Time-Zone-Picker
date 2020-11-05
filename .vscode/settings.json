@@ -1,0 +1,21 @@
+{
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true
+    },
+    "cSpell.enabled": true,
+    "cSpell.words": [
+        "parens"
+    ]
+}
