@@ -26,17 +26,17 @@ $('#map').timezonePicker({
     hoverText: function (e, data) {
         hoveredTimeZone.innerText = data.timezone + utcstring(data.offset) + data.offset;
         return;
-    }
+    },
+    defaultValue: { value: stdData, attribute: 'timezone'},
 });
 
 // Set up map listener
-$('#map').on('map:value:changed', function () {
+$('#map').on('map:country:clicked', function () {
     let selected = $('#map').data('timezonePicker').getValue()[0];
     if (selected && selected.timezone) {
-        selectedTimeZone.value = selected.timezone + utcstring(selected.offset) + selected.offset;;
+        selectedTimeZone.value = selected.timezone + utcstring(selected.offset) + selected.offset;
     }
 });
-
 
 function copy(){
     selectedTimeZone.select();
