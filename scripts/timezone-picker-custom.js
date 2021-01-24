@@ -11,7 +11,7 @@ let stdData = Intl.DateTimeFormat().resolvedOptions();
 let stdOffset = - new Date().getTimezoneOffset()/60;
 if (stdData) {
     autoDetectedTimeZone.innerText = stdData.timeZone + utcstring(stdOffset) + stdOffset;
-    selectedTimeZone.value = stdData.TimeZone + utcstring(stdOffset) + stdOffset;
+    selectedTimeZone.value = stdData.timeZone + utcstring(stdOffset) + stdOffset;
 }
 
 // Set up map
@@ -37,8 +37,9 @@ $('#map').on('map:value:changed', function () {
     }
 });
 
-selectedTimeZoneCopyBtn.onclick = function () {
-    selectedTimeZone.select();
-    document.execCommand('copy');
-};
 
+function copy(){
+    selectedTimeZone.select();
+    selectedTimeZone.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+}
