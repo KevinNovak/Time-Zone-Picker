@@ -1,0 +1,8 @@
+{
+    "apps": [
+        {
+            "name": "time-zone-picker",
+            "script": "server.js"
+        }
+    ]
+}
