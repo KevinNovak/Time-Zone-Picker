@@ -4,7 +4,7 @@
 
 Visit the following link to find your time zone:
 
-https://kevinnovak.github.io/Time-Zone-Picker/
+https://zones.arilyn.cc/
 
 ## References
 
