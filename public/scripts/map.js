@@ -2,7 +2,8 @@
 const MAP_ID = 'map';
 const MAP_DEFAULT_LATLONG = [25, 20];
 const MAP_DEFAULT_ZOOM = 3;
-const MAP_MAX_ZOOM = 19;
+const MAP_MIN_ZOOM = 1;
+const MAP_MAX_ZOOM = 15;
 const GEOJSON_PATH = '../data/2023d-combined-simplified.json';
 const GEOJSON_TZID = 'tzid';
 const TILES_URL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -67,6 +68,7 @@ async function init() {
 
     // Create map tile layer
     tileLayer = L.tileLayer(TILES_URL, {
+        minZoom: MAP_MIN_ZOOM,
         maxZoom: MAP_MAX_ZOOM,
         attribution: TILES_ATTRIBUTION,
     }).addTo(map);
