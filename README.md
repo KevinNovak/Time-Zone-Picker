@@ -6,7 +6,7 @@ Visit the following link to find your time zone:
 
 https://zones.arilyn.cc/
 
-![](docs\images\example.png)
+![](docs/images/example.png)
 
 ## References
 
