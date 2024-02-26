@@ -1,0 +1,17 @@
+{
+    "name": "time-zone-picker",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "start:pm2": "npm run pm2:start",
+        "pm2:start": "pm2 start process.json",
+        "pm2:stop": "pm2 stop process.json",
+        "pm2:delete": "pm2 delete process.json"
+    },
+    "author": "Kevin Novak",
+    "dependencies": {
+        "express": "^4.18.2",
+        "pm2": "^5.3.1"
+    }
+}
